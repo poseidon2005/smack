@@ -10,6 +10,7 @@ ok, I'm finally here, seen questions asked about this app, now I'm diving in.
 Switch to branch 62, created project and created this readme. May not be able to finish this lesson as it's time to go pick up Athena from school. Everything is pushed to github and I will work on this later tonight. Ok back at it after dropping off my daughter and making dinner. Completed cocoapods setup and changed the files to swift3.2. imported SWReveal from github and setup the header file for this. Build succeeded and now I'll commit this branch.
 
 ###Lesson-63 SWReveal
+Starting Lesson-63, probably won't finish this episode tonight as I'm a bit tired. Coding journal, lol.
 
 ###Lesson-64 ChannelVC UI
 
