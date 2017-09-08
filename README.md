@@ -13,6 +13,7 @@ Switch to branch 62, created project and created this readme. May not be able to
 Starting Lesson-63, probably won't finish this episode tonight as I'm a bit tired. Coding journal, lol.
 
 ###Lesson-64 ChannelVC UI
+Set up channel view gradient, experimented with triple gradient and set up buttons, labels and image on the storyboard
 
 ###Lesson-65 LoginVC UI
 

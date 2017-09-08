@@ -8,6 +8,12 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -36,7 +42,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA4-jA-6gA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA4-jA-6gA" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-z8-fzk">
@@ -84,19 +90,74 @@
         <scene sceneID="ovQ-O1-HIo">
             <objects>
                 <viewController id="K8d-ZV-TmH" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Eza-x5-8re">
+                    <view key="view" contentMode="scaleToFill" id="Eza-x5-8re" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-Yr-8CP">
+                                <rect key="frame" x="20" y="44" width="64" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-Fj-pMk">
+                                <rect key="frame" x="20" y="92" width="91" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-kg-ARo">
+                                <rect key="frame" x="281" y="93" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-BW-INi">
+                                <rect key="frame" x="115" y="589" width="52" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PKj-sp-KHQ">
+                                <rect key="frame" x="20" y="572" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7fd-WT-5zH"/>
+                                    <constraint firstAttribute="width" constant="75" id="fGU-24-CF9"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5EL-d0-Wnn">
+                                <rect key="frame" x="0.0" y="136" width="375" height="416"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5EL-d0-Wnn" firstAttribute="trailing" secondItem="HzU-s0-p3o" secondAttribute="trailing" id="0C0-T5-3DM"/>
+                            <constraint firstItem="5EL-d0-Wnn" firstAttribute="leading" secondItem="HzU-s0-p3o" secondAttribute="leading" id="3LL-bu-UOS"/>
+                            <constraint firstItem="P0J-BW-INi" firstAttribute="centerY" secondItem="PKj-sp-KHQ" secondAttribute="centerY" id="AW6-Bf-poq"/>
+                            <constraint firstItem="PKj-sp-KHQ" firstAttribute="leading" secondItem="HzU-s0-p3o" secondAttribute="leading" constant="20" id="OVX-lj-Gsd"/>
+                            <constraint firstItem="HzU-s0-p3o" firstAttribute="trailing" secondItem="OI7-kg-ARo" secondAttribute="trailing" constant="72" id="Olw-LO-wtD"/>
+                            <constraint firstItem="5EL-d0-Wnn" firstAttribute="top" secondItem="4Fh-Fj-pMk" secondAttribute="bottom" constant="20" id="VaV-KJ-93k"/>
+                            <constraint firstItem="4Fh-Fj-pMk" firstAttribute="leading" secondItem="HzU-s0-p3o" secondAttribute="leading" constant="20" id="ZOl-WA-JnY"/>
+                            <constraint firstItem="PKj-sp-KHQ" firstAttribute="top" secondItem="5EL-d0-Wnn" secondAttribute="bottom" constant="20" id="msn-jl-YuA"/>
+                            <constraint firstItem="4Fh-Fj-pMk" firstAttribute="top" secondItem="O3R-Yr-8CP" secondAttribute="bottom" constant="20" id="nXu-l6-6E6"/>
+                            <constraint firstItem="OI7-kg-ARo" firstAttribute="centerY" secondItem="4Fh-Fj-pMk" secondAttribute="centerY" id="uCM-VY-Y8k"/>
+                            <constraint firstItem="HzU-s0-p3o" firstAttribute="bottom" secondItem="PKj-sp-KHQ" secondAttribute="bottom" constant="20" id="vBj-1F-e8a"/>
+                            <constraint firstItem="P0J-BW-INi" firstAttribute="leading" secondItem="PKj-sp-KHQ" secondAttribute="trailing" constant="20" id="wtk-OD-vC1"/>
+                            <constraint firstItem="O3R-Yr-8CP" firstAttribute="leading" secondItem="HzU-s0-p3o" secondAttribute="leading" constant="20" id="xHD-Lb-N6z"/>
+                            <constraint firstItem="O3R-Yr-8CP" firstAttribute="top" secondItem="HzU-s0-p3o" secondAttribute="top" constant="24" id="zfW-2n-zSG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HzU-s0-p3o"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BU-zx-jDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="-179"/>
+            <point key="canvasLocation" x="892" y="-179.46026986506749"/>
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
