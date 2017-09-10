@@ -16,6 +16,7 @@ Starting Lesson-63, probably won't finish this episode tonight as I'm a bit tire
 Set up channel view gradient, experimented with triple gradient and set up buttons, labels and image on the storyboard
 
 ###Lesson-65 LoginVC UI
+Unable to complete lesson due to internet issues, will re-visit tomorrow. Completed new uicontroller and some layout. Remaining layout will be in branc 66.
 
 ###Lesson-66 CreateAccountVC UI
 

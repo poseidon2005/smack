@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1299BC1F6557B5000EE184 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1299BB1F6557B5000EE184 /* Constants.swift */; };
 		3EC79A241F5D085D007E3E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC79A231F5D085D007E3E71 /* AppDelegate.swift */; };
 		3EC79A291F5D085D007E3E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC79A271F5D085D007E3E71 /* Main.storyboard */; };
 		3EC79A2B1F5D085D007E3E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC79A2A1F5D085D007E3E71 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0D19C8AF0AC8422F212E66B3 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		3E1299BB1F6557B5000EE184 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3EC79A201F5D085D007E3E71 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC79A231F5D085D007E3E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EC79A281F5D085D007E3E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E1299BA1F655799000EE184 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E1299BB1F6557B5000EE184 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		3EC79A171F5D085D007E3E71 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 		3EC79A221F5D085D007E3E71 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				3E1299BA1F655799000EE184 /* Utilities */,
 				3EC79A3B1F5D4915007E3E71 /* Model */,
 				3EC79A3A1F5D490C007E3E71 /* View */,
 				3EC79A391F5D48F2007E3E71 /* Controller */,
@@ -262,6 +273,7 @@
 				3EC79A421F6244C4007E3E71 /* GradientView.swift in Sources */,
 				3EC79A241F5D085D007E3E71 /* AppDelegate.swift in Sources */,
 				3EC79A401F5E2F43007E3E71 /* SWRevealViewController.m in Sources */,
+				3E1299BC1F6557B5000EE184 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
