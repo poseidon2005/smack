@@ -26,10 +26,13 @@ Started api section 11/9/2017 installed mongodb, postman, huroku atom and mongot
 
 
 ###Lesson-68 Hosting API
+heaps of installation with huroku postman......
 
 ###Lesson-69 Locally Hosting API
+set up local hoste
 
 ###Lesson-70 Creating a web request in Xcode
+commited a bug at .post, not sure why my code is failing
 
 ###Lesson-71 Registering a User
 
